@@ -13,7 +13,7 @@ A full-featured expense tracker web app using HTML, CSS, JavaScript, and LocalSt
 
 ## 💻 Hosting
 Hosted via GitHub Pages:  
-https://your-username.github.io/expense_tracker/
+https://sirishathammineni.github.io/Brainwave_Matrix_Intern/
 
 ## 🚀 Run Locally
 Just open `index.html` in a browser.
