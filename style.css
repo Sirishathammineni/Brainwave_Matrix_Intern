@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+body.dark {
+  background: #121212;
+  color: #fff;
+}
+
+.container, .dashboard {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+body.dark .container, body.dark .dashboard {
+  background: #1e1e1e;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  background: #5c6bc0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #3f51b5;
+}
+
+a {
+  color: #3f51b5;
+}
+
+.summary, .filters {
+  margin: 20px 0;
+}
+
+.summary p {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #eee;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+body.dark ul li {
+  background: #2e2e2e;
+}
+
+.ad {
+  background: #ffeaa7;
+  padding: 10px;
+  border: 2px dashed #fdcb6e;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}

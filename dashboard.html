@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard | Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="dashboard">
+    <h2><i class="fas fa-wallet"></i> Expense Tracker Dashboard</h2>
+    <button id="logout"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    <button id="toggleDark"><i class="fas fa-moon"></i> Toggle Mode</button>
+
+    <div class="summary">
+      <p><i class="fas fa-money-bill-wave"></i> Income: ₹<span id="income">0</span></p>
+      <p><i class="fas fa-coins"></i> Expenses: ₹<span id="expense">0</span></p>
+      <p><i class="fas fa-balance-scale"></i> Balance: ₹<span id="balance">0</span></p>
+    </div>
+
+    <form id="transactionForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <input type="number" id="amount" placeholder="Amount" required />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <input type="text" id="category" placeholder="Category" required />
+      <input type="date" id="date" required />
+      <input type="text" id="mode" placeholder="Payment Mode" required />
+      <button type="submit">Add Transaction</button>
+    </form>
+
+    <div class="filters">
+      <input type="text" id="search" placeholder="Search..." />
+      <select id="filterType">
+        <option value="">All</option>
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <input type="month" id="filterMonth" />
+    </div>
+
+    <canvas id="categoryChart" width="400" height="200"></canvas>
+    <ul id="transactionList"></ul>
+
+    <form id="budgetForm">
+      <input type="number" id="monthlyBudget" placeholder="Monthly Budget" required />
+      <button type="submit">Set Budget</button>
+    </form>
+    <ul id="budgetStatus"></ul>
+
+    <div id="ads" class="ads"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="chart.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

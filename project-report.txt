@@ -1,0 +1,18 @@
+Project Title: Frontend-only Expense Tracker
+
+Stack Used:
+- HTML
+- CSS (with Font Awesome)
+- JavaScript
+- Chart.js
+- LocalStorage
+
+Key Features:
+- Login & Signup system
+- Dashboard with income/expense summary
+- Budget alerts
+- Category-wise pie chart
+- Simulated ads
+- Fully responsive design
+
+Use Case: Track and manage your personal expenses smartly.
